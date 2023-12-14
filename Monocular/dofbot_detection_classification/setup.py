@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'dofbot_detection'
+package_name = 'dofbot_detection_classification'
 
 setup(
     name=package_name,
@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'pictureSub = dofbot_detection_classification.picture_subscriber:main'
         ],
     },
 )
